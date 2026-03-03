@@ -1,2 +1,5 @@
-# 4d-example-gte-multilingual-base
-GTE Multilingual for GGUF, ONNX
+## [Alibaba-NLP/gte-multilingual-base](https://huggingface.co/Alibaba-NLP/gte-multilingual-base)
+
+|`max_position_embeddings`|`hidden_size`|`num_hidden_layers`
+|-:|-:|-:|
+|`8192`|`768`|`12`
