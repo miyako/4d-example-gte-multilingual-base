@@ -31,33 +31,6 @@ var $pooling : Text
 
 /*
 
-model settings (llama.cpp)
-
-use Q8_0 quantisation
-
-*/
-
-$homeFolder:=Folder:C1567(fk home folder:K87:24).folder(".GGUF")
-$port:=8080
-$options:={\
-embeddings: True:C214; \
-pooling: "cls"; \
-log_disable: True:C214; \
-fit: "on"}
-
-$folder:=$homeFolder.folder("gte-multilingual-base")
-$path:="gte-multilingual-reranker-base-Q8_0.gguf"
-$URL:="keisuke-miyako/gte-multilingual-base-gguf-q8_0"
-
-$huggingface:=cs:C1710.event.huggingface.new($folder; $URL; $path)
-$huggingfaces:=cs:C1710.event.huggingfaces.new([$huggingface])
-
-//required patched version of llama.cpp
-
-//$llama:=cs.llama.llama.new($port; $huggingfaces; $homeFolder; $options; $event)
-
-/*
-
 ONNX Runtime: 
 
 use int8 quantisation
