@@ -1,15 +1,5 @@
 /*
 
-llama-server settings
-
-*/
-
-var $llama : cs:C1710.llama.llama
-var $homeFolder : 4D:C1709.Folder
-var $huggingface : cs:C1710.event.huggingface
-
-/*
-
 callbacks for downloader (alert on error)
 
 */
