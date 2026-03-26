@@ -26,4 +26,4 @@ ALERT([$cosineSimilarity].join())
 
 |ONNX Runtime `Int8`|
 |-|
-|`0.72446597387183`|
+|`0.71400887841264`|
